@@ -1,11 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="b63d857c-1f92-4a17-a3cd-e6ecf038e3ec" name="Changes" comment="" />
+    <list default="true" id="b63d857c-1f92-4a17-a3cd-e6ecf038e3ec" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ jmp-cloud-bank-impl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jmp-application" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jmp-bank-api" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jmp-cloud-service-impl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jmp-dto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jmp-service-api" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="2KoUtcu8as374hsYzMGkrpVYmc4" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -13,7 +26,11 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false"
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "E:/projects/global_mentoring_module1",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -26,5 +43,20 @@
       <updated>1674640647671</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="creating the application body" />
+    <option name="LAST_COMMIT_MESSAGE" value="creating the application body" />
   </component>
 </project>
