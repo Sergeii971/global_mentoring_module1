@@ -3,8 +3,8 @@ package com.os.module1.impl;
 import com.os.module1.dto.BankCard;
 import com.os.module1.dto.Subscription;
 import com.os.module1.dto.User;
-import com.os.module1.repository.BankCardRepository;
-import com.os.module1.repository.UserRepository;
+import com.os.module1.service.repository.BankCardRepository;
+import com.os.module1.service.repository.UserRepository;
 import com.os.module1.service.CommonService;
 import org.springframework.stereotype.Service;
 
@@ -13,8 +13,8 @@ import java.util.Optional;
 
 @Service
 public class CommonServiceImpl implements CommonService {
-    private BankCardRepository bankCardRepository;
-    private UserRepository userRepository;
+    private final BankCardRepository bankCardRepository;
+    private final UserRepository userRepository;
 
     public CommonServiceImpl(BankCardRepository bankCardRepository, UserRepository userRepository) {
         this.bankCardRepository = bankCardRepository;

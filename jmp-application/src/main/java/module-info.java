@@ -1,11 +1,13 @@
-module jmp.application {
-    requires static java.annotation;
+open module jmp.application {
     requires static spring.beans;
     requires static spring.context;
     requires static spring.boot;
+    requires spring.core;
     requires static spring.boot.autoconfigure;
-    requires static lombok;
-    requires static spring.data.jpa;
+    requires spring.data.jpa;
+
     requires jmp.cloud.service.impl;
+    requires jmp.service.api;
+
     exports com.os.module1.application;
 }

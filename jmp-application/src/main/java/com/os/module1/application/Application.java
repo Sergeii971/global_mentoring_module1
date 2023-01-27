@@ -1,29 +1,30 @@
 package com.os.module1.application;
 
-import com.os.module1.impl.CommonServiceImpl;
 import com.os.module1.service.CommonService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
-@ComponentScan(basePackages = {"com.os.module1"})
-@EnableJpaRepositories("com.os.module1.repository")
+@ComponentScan(basePackages = {"com.os.module1", "com.os.module1.service", "com.os.module1.impl"})
+@EnableJpaRepositories("com.os.module1.service.repository")
 @EntityScan("com.os.module1.dto")
+@EnableConfigurationProperties
 public class Application implements CommandLineRunner {
     @Autowired
-    private CommonServiceImpl commonService;
+    private CommonService commonService;
 
     public static void main(String[] args) {
         SpringApplication.run(Application.class, args);
     }
 
     @Override
-    public void run(String... args) throws Exception {
+    public void run(String... args) {
         commonService.getAllUsers();
     }
 }
