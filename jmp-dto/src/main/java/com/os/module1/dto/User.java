@@ -1,26 +1,36 @@
 package com.os.module1.dto;
 
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.OneToMany;
-import javax.persistence.Table;
+import javax.persistence.*;
+import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
-@Data
 @Entity
-@Table(name = "User")
-public class User {
+@Table(name = "`user`")
+@Getter
+@Setter
+public class User implements Serializable {
     @Id
-    private Integer id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer userId;
     private String name;
     private String surname;
     private LocalDate birthday;
-
     @OneToMany(mappedBy = "user")
-    private List<BankCard> bankCardList = new ArrayList<>();
+    private List<BankCard> bankCards = new ArrayList<>();
 
+    @Override
+    public String toString() {
+        return "User{" +
+                "userId=" + userId +
+                ", name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", birthday=" + birthday +
+                '}';
+    }
 }

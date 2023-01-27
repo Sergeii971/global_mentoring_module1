@@ -5,9 +5,9 @@ module jmp.cloud.service.impl {
     requires static spring.context;
     requires static spring.boot;
     requires static spring.core;
-    requires spring.data.commons;
+    requires static spring.data.commons;
     requires static spring.data.jpa;
-    requires hibernate.entitymanager;
+    requires static hibernate.entitymanager;
 
     exports com.os.module1.impl;
 }

@@ -1,4 +1,4 @@
-package com.os.module1.service.repository;
+package com.os.module1.repository;
 
 import com.os.module1.dto.User;
 import org.springframework.data.repository.CrudRepository;
