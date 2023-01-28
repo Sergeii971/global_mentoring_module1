@@ -5,7 +5,7 @@ import com.os.module1.dto.BankCardType;
 import com.os.module1.dto.User;
 import com.os.module1.repository.BankCardRepository;
 import com.os.module1.repository.UserRepository;
-import com.os.module1.service.BankService;
+import com.os.module1.service.bank.BankService;
 import org.springframework.stereotype.Service;
 import org.springframework.util.SimpleIdGenerator;
 

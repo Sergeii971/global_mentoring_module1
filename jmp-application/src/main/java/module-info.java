@@ -9,6 +9,7 @@ open module jmp.application {
     requires jmp.cloud.service.impl;
     requires jmp.service.api;
     requires jmp.dto;
+    requires jmp.bank.api;
 
     exports com.os.module1.application;
 }

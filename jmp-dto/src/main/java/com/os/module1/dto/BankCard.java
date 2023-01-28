@@ -7,6 +7,7 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "bankCard")
+@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 @Getter
 @Setter
 public class BankCard {
@@ -18,4 +19,12 @@ public class BankCard {
     @ManyToOne
     @JoinColumn(name = "user_id")
     private User user;
+
+    @Override
+    public String toString() {
+        return "BankCard{" +
+                "id=" + id +
+                ", number='" + number + '\'' +
+                '}';
+    }
 }

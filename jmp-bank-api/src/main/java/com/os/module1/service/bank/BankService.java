@@ -1,4 +1,4 @@
-package com.os.module1.service;
+package com.os.module1.service.bank;
 
 import com.os.module1.dto.BankCard;
 import com.os.module1.dto.BankCardType;

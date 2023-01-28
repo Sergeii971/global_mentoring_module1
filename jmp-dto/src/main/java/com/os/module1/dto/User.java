@@ -24,6 +24,17 @@ public class User implements Serializable {
     @OneToMany(mappedBy = "user")
     private List<BankCard> bankCards = new ArrayList<>();
 
+    public User() {
+    }
+
+    public User(Integer userId, String name, String surname, LocalDate birthday, List<BankCard> bankCards) {
+        this.userId = userId;
+        this.name = name;
+        this.surname = surname;
+        this.birthday = birthday;
+        this.bankCards = bankCards;
+    }
+
     @Override
     public String toString() {
         return "User{" +

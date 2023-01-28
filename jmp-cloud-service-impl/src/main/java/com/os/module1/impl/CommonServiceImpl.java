@@ -11,6 +11,7 @@ import com.os.module1.service.CommonService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDate;
 import java.util.List;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
@@ -32,7 +33,8 @@ public class CommonServiceImpl implements CommonService {
 
     @Override
     public void subscribe(BankCard bankCard) {
-        bankCardRepository.save(bankCard);
+        Subscription subscription = new Subscription(3, bankCard.getNumber(), LocalDate.now());
+        subscriptionRepository.save(subscription);
     }
 
     @Override
